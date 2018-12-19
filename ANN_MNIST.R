@@ -11,17 +11,6 @@ number_of_class = 10 #출력값이 가질 클래스 수
 Nout = number_of_class #출력노드 수
 
   #모델 설정
-  #ver.1
-model %>%
-  layer_dense(input_shape = c(Nin),
-              activation = "relu",
-              units = Nh) %>%
-  layer_dense(units = Nh,
-              activation = "relu") %>%
-  layer_dense(units = Nout,
-              activation = "softmax")
-
-  #ver.2
 model %>%
   layer_dense(units = Nh,
               activation = "relu",
