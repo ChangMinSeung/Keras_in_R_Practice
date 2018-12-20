@@ -11,7 +11,7 @@ c(x_test, y_test) %<-% cifar10$test
 y_train <- to_categorical(y_train, 10)
 y_test <- to_categorical(y_test, 10)
 
-  #reshape#2차원으로
+  #reshape#1차원으로
 x_train <- array_reshape(x_train, c(nrow(x_train), 3072))
 x_test <- array_reshape(x_test, c(nrow(x_test), 3072))
 
